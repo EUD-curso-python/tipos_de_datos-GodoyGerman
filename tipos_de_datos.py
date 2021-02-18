@@ -61,27 +61,36 @@ apellido2 = apellido.strip()
 solo letras mayúsculas.
 """
 
+apellido_es_mayuscula = apellido2.upper().startswith('')
 
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
 
+apellido3 = apellido2.upper()
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
 la variable `apellido2`.
 """
 
+a_in_apellido = len(apellido2)
 
 """Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
 """
+
+apellido_end_ez = apellido2.endswith('ez')
 
 
 """Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
+  
+apellidos_tuple = apellidos_list[23:50:2]
+apellidos_tuple.reverse()
+apellidos_tuple = tuple(apellidos_tuple)
 
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
@@ -89,18 +98,27 @@ lista `apellidos_list`.
 posición 78 de la lista `apellidos_list`.
 """
 
+apellidos_list2 = list(apellidos_tuple)
+apellidos_list2.append(apellidos_list[78])
+
+
 
 """Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
+
+apellidos_list2.pop(3)
 
 
 """Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
 """
 
+apellidos_list2.remove("  MORALES")
+
 
 """Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
 elemento 56 al 70 de la variable `apellidos_list`.
 """
+
 
 
 """Invertir el orden actual de la variable `apellidos_list2`.
