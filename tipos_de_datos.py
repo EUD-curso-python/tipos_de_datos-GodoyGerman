@@ -43,21 +43,24 @@ print(var2)
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
 
+apellido = apellidos_list[var2]
 
 
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
 
+len_apellido = len(apellido)
 
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
-
+apellido2 = apellido.strip()
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
+
 
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
