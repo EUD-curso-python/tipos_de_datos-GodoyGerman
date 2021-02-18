@@ -5,31 +5,44 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 """Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
+var1 = data.split('\n',1)
 
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
 
+apellidos = var1[0]
+decimales = var1[1]
+
+#print(apellidos)
+
 
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
 
+apellidos_list = apellidos.split(',')
+#print(apellidos_list)
 
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
+
+decimales_list = decimales.split(';')
 
 
 """Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
 convertirlo en un entero y guardarlo en variable `var2`.
 """
 
+var2 = int(float(decimales_list[38]))
+print(var2)
 
 """Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
+
 
 
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
